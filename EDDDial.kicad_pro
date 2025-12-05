@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,24 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "hole_clearance|125170000|122840000|33c4e7d3-db3c-4086-8093-8f6fad3a10f2|bed4542e-718f-4dab-aa45-31e9c9f6eb74",
+          ""
+        ],
+        [
+          "hole_clearance|125170000|122840000|33c4e7d3-db3c-4086-8093-8f6fad3a10f2|d07bd7fb-f6d0-4105-aa6d-7c7299708546",
+          ""
+        ],
+        [
+          "hole_clearance|125170000|128940000|252ebbff-e0e9-4bfa-bac6-823d3ec2047b|514b27ab-4877-4a87-b357-5a61ec544a3e",
+          ""
+        ],
+        [
+          "hole_clearance|125170000|128940000|252ebbff-e0e9-4bfa-bac6-823d3ec2047b|524436e9-a963-4939-89cf-342c9a32bda9",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
