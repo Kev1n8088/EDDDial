@@ -1,4 +1,4 @@
-25646895306369296
+25648660173251428
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59345,6 +59345,13 @@ Wio-SX1262
 0
 12
 12
+FCU2025Lib
+XCVR_MDBT50Q-1MV2
+
+
+0
+61
+61
 FCU2025Lib
 XDCR_ANT-916-JJB-RA
 
