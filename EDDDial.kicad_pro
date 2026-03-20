@@ -60,19 +60,7 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|125170000|122840000|33c4e7d3-db3c-4086-8093-8f6fad3a10f2|bed4542e-718f-4dab-aa45-31e9c9f6eb74",
-          ""
-        ],
-        [
-          "hole_clearance|125170000|122840000|33c4e7d3-db3c-4086-8093-8f6fad3a10f2|d07bd7fb-f6d0-4105-aa6d-7c7299708546",
-          ""
-        ],
-        [
-          "hole_clearance|125170000|128940000|252ebbff-e0e9-4bfa-bac6-823d3ec2047b|514b27ab-4877-4a87-b357-5a61ec544a3e",
-          ""
-        ],
-        [
-          "hole_clearance|125170000|128940000|252ebbff-e0e9-4bfa-bac6-823d3ec2047b|524436e9-a963-4939-89cf-342c9a32bda9",
+          "copper_edge_clearance|93656429|121770710|8bda19c6-06c5-4827-8d7a-e43c7e18a6c9|ee48d2e1-3ada-4abb-9db7-e15c098779b0",
           ""
         ]
       ],
@@ -105,7 +93,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "ignore",
+        "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -113,9 +101,9 @@
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "warning",
+        "npth_inside_courtyard": "ignore",
         "padstack": "warning",
-        "pth_inside_courtyard": "warning",
+        "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -140,21 +128,21 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.127,
+        "min_clearance": 0.154,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.381,
+        "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.254,
-        "min_hole_to_hole": 0.2,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.254,
-        "min_track_width": 0.16,
-        "min_via_annular_width": 0.12,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.154,
+        "min_via_annular_width": 0.127,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -205,15 +193,8 @@
       ],
       "track_widths": [
         0.0,
-        0.1,
-        0.15,
         0.2,
-        0.32,
-        0.4,
-        0.64,
-        1.28,
-        2.0,
-        2.56
+        0.4
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -247,12 +228,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.5,
-          "drill": 0.26
-        },
-        {
-          "diameter": 0.6,
-          "drill": 0.36
+          "diameter": 0.508,
+          "drill": 0.254
         }
       ],
       "zones_allow_external_fillets": false
@@ -487,6 +464,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -504,7 +482,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.09,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -515,9 +493,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.09,
-        "via_diameter": 0.35,
-        "via_drill": 0.2,
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -533,10 +511,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "EDDDial.step",
       "svg": "",
       "vrml": ""
     },
